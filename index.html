@@ -41,8 +41,8 @@
                 <p>DJ & aspiring programmer. Passionate about music, DJing, and production. I also enjoy skateboarding, working out, and running – living an active lifestyle.</p>
             </div>
 
-             <h2 id="myHeading">Hello, this is the original text.</h2>
-            <button id="myButton">Click me!</button>
+            <button id="loadBtn">Load Message</button>
+            <p id="messageArea"></p>
         </main>
 
         <footer>
@@ -51,27 +51,22 @@
         </footer>
 
         <script>
-            let userName = prompt("Please enter your name:");
-            let userAge = prompt("Please enter your age:");
-            let userFavoriteColor = prompt("Please enter your favorite color:");
-            
-            let age = parseInt(userAge);
+           function fetchMessage(){
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("Hello, this is a message from the future!");
+                }, 2000);
+            });
+           }
 
-            if (age < 13){
-                alert("You are a child.");
-            }else if( age >= 13 && age <= 19){
-                alert("You are a teenager.");
-            }else if (age >= 20){
-                alert("You are an adult.");
-            }
-            
-            const heading = document.getElementById("myHeading");
-            const button = document.getElementById("myButton");
+            const button = document.getElementById("loadBtn");
+            const message = document.getElementById("messageArea");
 
-            button.addEventListener("click", function() {
-            heading.innerText = "The text has been changed!";
+            button.addEventListener("click", async () => {
+            message.innerText = "Loading...";
+            const result = await fetchMessage();
+            message.innerText = result;
     });
-
         </script>
     </body>
 </html>
