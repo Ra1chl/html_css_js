@@ -13,48 +13,18 @@
                 align-items: center;
                 justify-content: center;
             }
-            h1 {
-                color: rgb(13, 49, 148);
+            #card{
+                background-color: white;
+                border-radius: 10px;
+                padding: 20px;
+                text-align: center;
+                width: max-content;
+                margin: 20px auto;
+                box-shadow: 0 4px 8px rgba(22, 22, 22, 0.2);
             }
-            h2 {
-                color: rgb(12, 105, 180);
-            }
-            #p-1 {
-                font-size: 20px;
-                font-weight: bold;
-            }
-            #p-2 {
-                font-size: 15px;
-                font-style: italic;
-            }
-            #my-favourite-foods {
-               border: 5px solid black;
-               padding: 10px;
-               margin: 20px;
-            }
-            #nav{
-                list-style-type: none;
-                display: flex;
-                padding: 0;
-                margin: 0;
-                flex-direction: row;
-                justify-content: center;
-            }
-            .nav-link {
-                margin-right: 20px; 
-            }
-
-            .nav-txt {
-                text-decoration: none;
-                padding: 10px 15px;
-                color: black;
-                background-color: #e0e0e0;
-                border-radius: 5px;
-            }
-
-            .nav-txt:hover {
-            background-color: #c0c0c0;
-            color: white;
+            #card:hover {
+                background-color: rgb(246, 251, 255);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             }
 
         </style>
@@ -62,47 +32,15 @@
     <body>
 
         <header>
-            <ul id ="nav">
-                <li class="nav-link"><a class="nav-txt" href="#">Home</a></li>
-                <li class="nav-link"><a class="nav-txt" href="#">About</a></li>
-                <li class="nav-link"><a class="nav-txt" href="#">Contact</a></li>
-            </ul>
-
-            <h1>Welcome to My Web Page</h1>
-            <p id ="p-1">This is my <b>personal boi webpage.</b></p>
-            <p id="p-2">My name is <b>Jonas Raichl</b>, I am 15 years old and I live in <b>Prague</b>.</p>
+           
         </header>
         <main>  
-            <section>
+           <div id="card">
                 <img src="https://www.spsejecna.cz/img/thumbnail/IMG-21j5ocxt.JPG" alt="My Image" width="100" height="100">
-                <p>In my free time, I focus on <b>DJing</b> and <b>music production</b>. I also <b>skateboard</b>, go to the <b>gym, and run</b>. Overall, I enjoy an <b>active lifestyle</b>.</p>
-                <p>I want to become a <b>famous DJ</b> and a <b>professional programmer</b>.</p>
-            </section>
-               
+                <h2>Jonas Raichl</h2>
+                <p>DJ & aspiring programmer. Passionate about music, DJing, and production. I also enjoy skateboarding, working out, and running – living an active lifestyle.</p>
+            </div>
 
-            <section>
-                <div id="my-favourite-foods">
-                 <h2>My Favourite Foods</h2>
-                <ul>
-                    <li>Pizza</li>
-                    <li>Hamburger</li>
-                    <li>Spaghetti</li>
-                    <li>Salad</li>
-                    <li>Fruit</li>
-                </ul>
-                </div>
-            </section>
-
-            <section>
-                <h2>Websides I Love</h2>
-                <ul>
-                    <li><a href="https://www.youtube.com/">YouTube</a></li>
-                    <li><a href="https://www.instagram.com/">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/">Facebook</a></li>
-                    <li><a href="https://www.twitch.tv/">Twitch</a></li>
-                </ul>    
-            </section>
-                
         </main>
 
         <footer>
