@@ -9,7 +9,9 @@
             body {
                 background-color: rgb(185, 204, 221);
                 font-family: Arial, Courier, Verdana;
-            
+                  text-align: center;
+                align-items: center;
+                justify-content: center;
             }
             h1 {
                 color: rgb(13, 49, 148);
@@ -30,11 +32,42 @@
                padding: 10px;
                margin: 20px;
             }
+            #nav{
+                list-style-type: none;
+                display: flex;
+                padding: 0;
+                margin: 0;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .nav-link {
+                margin-right: 20px; 
+            }
+
+            .nav-txt {
+                text-decoration: none;
+                padding: 10px 15px;
+                color: black;
+                background-color: #e0e0e0;
+                border-radius: 5px;
+            }
+
+            .nav-txt:hover {
+            background-color: #c0c0c0;
+            color: white;
+            }
+
         </style>
     </head>
     <body>
 
         <header>
+            <ul id ="nav">
+                <li class="nav-link"><a class="nav-txt" href="#">Home</a></li>
+                <li class="nav-link"><a class="nav-txt" href="#">About</a></li>
+                <li class="nav-link"><a class="nav-txt" href="#">Contact</a></li>
+            </ul>
+
             <h1>Welcome to My Web Page</h1>
             <p id ="p-1">This is my <b>personal boi webpage.</b></p>
             <p id="p-2">My name is <b>Jonas Raichl</b>, I am 15 years old and I live in <b>Prague</b>.</p>
